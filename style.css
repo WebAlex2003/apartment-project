@@ -1,0 +1,170 @@
+:root {
+  --white: #ffffff;
+  --accent: #d4c17f;
+  --dark: #242b33;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Raleway", "Roboto", "Playfair Display", sans-serif;
+}
+
+.container {
+  padding: 0 405px 0 405px;
+}
+/* Header Section */
+
+.header {
+  background-image: url(./img/Rectangle.png);
+  padding: 30px 405px 74px 405px;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 200px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-item {
+  color: var(--white);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.7px;
+
+  transition: 500ms linear;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--accent);
+  transition: 200ms linear;
+}
+
+.header-title {
+  color: var(--accent, #d4c17f);
+  font-family: "Playfair Display";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+
+  max-width: 556px;
+  margin: 0 auto 100px auto;
+
+  text-align: center;
+}
+
+.header-mouse {
+  display: block;
+  margin: 0 auto 200px auto;
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.contact-block {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-link {
+  color: var(--white);
+
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+
+  transition: 500ms linear;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent);
+  transition: 200ms linear;
+}
+
+/* Testimonials Section */
+
+.testimonials-section {
+  padding-top: 120px;
+  padding-bottom: 180px;
+
+  background-color: var(--dark);
+}
+
+.testimonials-list {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.testimonials-item {
+  width: calc((100% - 210px) / 4);
+}
+
+.testimonials-text {
+  color: #fff;
+
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.testimonials-svg {
+  display: block;
+  margin: 0 auto 53px auto;
+}
+
+.appartment-title {
+  color: var(--accent);
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-top: 120px;
+}
