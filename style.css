@@ -167,4 +167,109 @@ body {
   line-height: normal;
 
   margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-item {
+  width: calc((100% - 30px) / 2);
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* transform: translateY(100%); */
+  opacity: 0;
+  transition: 500ms linear;
+
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  padding-top: 140px;
+}
+.overlay:hover .overlay-text {
+  /* transform: translateY(0); */
+  opacity: 1;
+  transition: 500ms linear;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Viewing Section  */
+
+.viewing-section {
+  background-image: url(./img/Rectangle-5.png);
+  padding-bottom: 180px;
+}
+
+.viewing-block {
+  display: flex;
+  gap: 35px;
+}
+
+.viewing-title {
+  color: var(--accent);
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 50px;
+  max-width: 380px;
+}
+
+.viewing-text {
+  color: var(--white);
+
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  max-width: 535px;
+}
+
+.viewing-form-container {
+  display: flex;
+  align-items: center;
+}
+
+.viewing-input {
+  padding: 15px;
+  background-color: rgb(99, 98, 94);
+  border: none;
+}
+
+.viewing-input::placeholder {
+  color: var(--accent);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  padding-top: 180px;
+}
+
+.footer-section {
+  background-color: var(--dark);
 }
